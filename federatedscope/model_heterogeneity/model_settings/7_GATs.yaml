@@ -1,0 +1,42 @@
+client_1:
+  model:
+    type: gat
+    hidden: 128
+    dropout: 0.5
+    layer: 2
+client_2:
+  model:
+    type: gat
+    hidden: 128
+    dropout: 0.5
+    layer: 2
+client_3:
+  model:
+    type: gat
+    hidden: 128
+    dropout: 0.5
+    layer: 2
+client_4:
+  model:
+    type: gat
+    hidden: 128
+    dropout: 0.5
+    layer: 2
+client_5:
+  model:
+    type: gat
+    hidden: 128
+    dropout: 0.5
+    layer: 2
+client_6:
+  model:
+    type: gat
+    hidden: 128
+    dropout: 0.5
+    layer: 2
+client_7:
+  model:
+    type: gat
+    hidden: 128
+    dropout: 0.5
+    layer: 2

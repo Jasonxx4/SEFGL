@@ -1,0 +1,2 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-07-30 03:53,0,local,5,SGD,8.0,subreddit,,813,10,0.5748339395223121,9,0.5,0.5,5000,1,0.001,0.0,False,0.5868552822482465

@@ -1,0 +1,46 @@
+use_gpu: True
+device: 0
+early_stop:
+  patience: 50
+seed: 0
+federate:
+  method: local
+  mode: standalone
+  client_num: 5
+  total_round_num: 200
+  sample_client_rate: 1.0
+  make_global_eval: False
+data:
+  root: data/
+  local_eval_whole_test_dataset: True
+  type: 'SVHN@torchvision'
+  num_workers: 0
+  transform: [['ToTensor']]
+  test_transform: [['ToTensor']]
+  args: [{'download': True}]
+  splitter: 'lda'
+  splitter_args: [{'alpha': 0.1}] #please set alpha to 100,1 and 0.1. The smaller alpha, the greater the heterogeneity
+dataloader:
+  batch_size: 256
+train:
+  local_update_steps: 1
+  batch_or_epoch: epoch
+  optimizer:
+    type: Adam
+    lr: 0.001
+    weight_decay: 1e-4
+model:
+  out_channels: 10
+  dropout: 0.5
+grad:
+  grad_clip: 5.0
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: cvtrainer
+eval:
+  freq: 1
+  metrics: ['acc', 'correct']
+  report : ['weighted_avg', 'avg', 'raw']
+  best_res_update_round_wise_key: test_acc
+

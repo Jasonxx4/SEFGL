@@ -1,0 +1,6 @@
+exp_time,seed,method,optimizer,lr,datasets,splitter,client_num,local_updates,dropout,client_cfg_file,best_round,test_acc,whole_test_dataset,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-09-04 11:25,0,poiv3,SGD,0.25,cora,louvain,3,4,0.5,model_heterogeneity/model_settings/3_Heterogeneous_GNNs.yaml,8,0.8509031505640655,False,False,0.8740401505887975
+2023-09-04 11:26,1,poiv3,SGD,0.25,cora,louvain,3,4,0.5,model_heterogeneity/model_settings/3_Heterogeneous_GNNs.yaml,10,0.8582038197084261,False,False,0.8727757687066046
+2023-09-04 11:27,2,poiv3,SGD,0.25,cora,louvain,3,4,0.5,model_heterogeneity/model_settings/3_Heterogeneous_GNNs.yaml,11,0.8615388617961385,False,False,0.8706463299200001
+2023-09-04 11:45,0,poiv3,SGD,0.25,cora,louvain,3,4,0.5,model_heterogeneity/model_settings/3_Heterogeneous_GNNs.yaml,8,0.852724644188838,False,False,0.8756124776328228
+2023-09-04 11:46,1,poiv3,SGD,0.25,cora,louvain,3,4,0.5,model_heterogeneity/model_settings/3_Heterogeneous_GNNs.yaml,12,0.8563823260836538,False,False,0.8654897942075154

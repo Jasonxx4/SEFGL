@@ -1,0 +1,46 @@
+use_gpu: True
+device: 0
+early_stop:
+  patience: 50
+seed: 0
+federate:
+  mode: standalone
+  total_round_num: 500
+  sample_client_rate: 1.0
+  client_num: 5
+  make_global_eval: False
+data:
+  root: data/
+  type: femnist
+  splits: [ 0.6,0.2,0.2 ]
+  transform: [ [ 'ToTensor' ], [ 'Normalize', { 'mean': [ 0.9637 ], 'std': [ 0.1592 ] } ] ]
+dataloader:
+  batch_size: 256
+fml:
+  meme_model:
+    type: LeNet5
+    out_channels: 62
+    T: 4
+model:
+  type: LeNet5
+  T: 4
+  out_channels: 62
+train:
+  local_update_steps: 1
+  batch_or_epoch: epoch
+  optimizer:
+    type: Adam
+    lr: 0.01
+    weight_decay: 1e-4
+grad:
+  grad_clip: 5.0
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: fml_cv_trainer
+eval:
+  freq: 1
+  metrics: ['acc']
+  report : ['weighted_avg', 'avg']
+  best_res_update_round_wise_key: test_acc
+exp_name: 'FML_5_clients_on_femnist_low_heterogeneity'

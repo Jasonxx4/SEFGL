@@ -1,0 +1,7 @@
+exp_time,seed,method,batch_size,datasets,splitter,client_num,local_updates,test_acc,alpha,proto_weight
+2023-07-04 13:50,0,fedproto,256,CIFAR10@torchvision,lda,5,1,0.71904,100
+2023-07-04 14:10,2,fedproto,256,CIFAR10@torchvision,lda,5,1,0.7161600000000001,100
+2023-07-04 14:10,2,fedproto,256,CIFAR10@torchvision,lda,5,1,0.7161600000000001,100
+2023-07-04 15:57,0,fedproto,256,CIFAR10@torchvision,lda,5,1,0.7125999999999999,100,1.0
+2023-07-04 18:46,0,fedproto,256,CIFAR10@torchvision,lda,5,1,0.7104000000000001,100,10.0
+2023-07-05 02:58,0,fedproto,256,CIFAR10@torchvision,lda,5,4,0.72174,100,0.1

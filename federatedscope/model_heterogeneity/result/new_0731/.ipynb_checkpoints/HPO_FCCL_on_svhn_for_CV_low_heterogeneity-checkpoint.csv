@@ -1,0 +1,3 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,alpha,off_diag_weight,loss_dual_weight,public_dataset_name,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-07-31 21:58,0,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.5366933005531653,127,0.5,0.5,5000,1,0.001,0.5,100,0.0051,0,cifar100,True,0.6338352796558082
+2023-08-01 01:09,0,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.3220497848801475,24,0.5,0.5,5000,1,0.001,0.5,100,0.0051,0,fashion_minist,True,0.40668408113091575

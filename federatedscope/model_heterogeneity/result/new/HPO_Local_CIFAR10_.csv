@@ -1,0 +1,3 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,alpha,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-07-27 17:33,0,local,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.70516,84,0.5,0.5,5000,1,0.001,100,True,0.7061
+2023-07-27 18:40,1,local,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.69798,167,0.5,0.5,5000,1,0.001,100,True,0.7043999999999999

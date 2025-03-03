@@ -1,0 +1,60 @@
+client_1:
+  model:
+    type: gat
+    hidden: 64
+    dropout: 0.5
+    layer: 1
+client_2:
+  model:
+    type: gat
+    hidden: 64
+    dropout: 0.5
+    layer: 2
+client_3:
+  model:
+    type: gat
+    hidden: 64
+    dropout: 0.5
+    layer: 3
+client_4:
+  model:
+    type: gcn
+    hidden: 64
+    dropout: 0.5
+    layer: 1
+client_5:
+  model:
+    type: gcn
+    hidden: 64
+    dropout: 0.5
+    layer: 2
+client_6:
+  model:
+    type: gcn
+    hidden: 64
+    dropout: 0.5
+    layer: 3
+client_7:
+  model:
+    type: gpr
+    hidden: 64
+    dropout: 0.5
+    layer: 10
+client_8:
+  model:
+    type: gpr
+    hidden: 64
+    dropout: 0.5
+    layer: 10
+client_9:
+  model:
+    type: gpr
+    hidden: 64
+    dropout: 0.5
+    layer: 8
+client_10:
+  model:
+    type: gpr
+    hidden: 64
+    dropout: 0.5
+    layer: 8

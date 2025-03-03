@@ -1,0 +1,4 @@
+exp_time,seed,method,optimizer,lr,datasets,splitter,client_num,local_updates,dropout,client_cfg_file,best_round,test_acc,whole_test_dataset,local_eval_whole_test_dataset,individual_best_bac_avg,individual_best_f1score_avg,individual_best_test_acc_avg
+2024-04-13 14:08,0,fedkd,SGD,0.25,computers,louvain,5,16,0.5,model_heterogeneity/model_settings/5_Heterogeneous_GNNs.yaml,58,0.24312727272727272,True,True,0.0,0.18809684976999339,0.29359999999999997
+2024-04-13 14:16,1,fedkd,SGD,0.25,computers,louvain,5,16,0.5,model_heterogeneity/model_settings/5_Heterogeneous_GNNs.yaml,59,0.21905454545454545,True,True,0.0,0.21134052300163902,0.3090181818181818
+2024-04-13 14:24,2,fedkd,SGD,0.25,computers,louvain,5,16,0.5,model_heterogeneity/model_settings/5_Heterogeneous_GNNs.yaml,42,0.2359272727272727,True,True,0.0,0.19468368612061765,0.2938181818181818

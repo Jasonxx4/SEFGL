@@ -1,0 +1,59 @@
+use_gpu: True
+device: 0
+seed: 0
+early_stop:
+  patience: 30
+federate:
+  mode: standalone
+  method: fedproto_cluster
+  client_num: 5
+  sample_client_rate: 1.0
+  total_round_num: 50
+  make_global_eval: False
+fedproto:
+  proto_weight: 1.0 # the weight of proto loss;
+  show_verbose: True # weather display verbose loss information
+  n_cls: 8
+  infoNCET: 0.02
+  lamda: 0.5
+graphsha:
+  imb_ratio: 80
+  gdc: 'ppr'
+  warmup: 5
+  tau: 2
+  delta: 0.1
+data:
+  root: data/
+  type: photo
+  splitter: 'louvain'
+dataloader:
+  type: pyg
+  batch_size: 1
+MHFL:
+  task: node  #TODO: MHFL.task and model.task should only keep one
+model:
+  type: gcn
+  dropout: 0.5
+  out_channels: 8
+  return_proto: True
+  warpFC: True #important
+  feature_dim: 64 #important
+train:
+  local_update_steps: 30
+  batch_or_epoch: epoch
+  optimizer:
+    type: SGD
+    lr: 0.25
+    weight_decay: 5e-4
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: fedproto_node_trainer_sha_cluster
+grad:
+  grad_clip: 5.0
+eval:
+  freq: 1
+  metrics: ['acc']
+  report : ['weighted_avg', 'avg']
+  best_res_update_round_wise_key: val_acc
+vis_embedding: True

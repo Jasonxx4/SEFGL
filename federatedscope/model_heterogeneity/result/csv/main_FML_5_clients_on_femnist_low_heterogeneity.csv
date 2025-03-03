@@ -1,0 +1,5 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,local_eval_whole_test_dataset
+2023-07-12 13:26,0,FedAvg,256,Adam,0.01,femnist,,5,1,0.6922661947661948,246,False
+2023-07-12 13:33,0,FedAvg,256,Adam,0.01,femnist,,5,1,0.6922661947661948,246,False
+2023-07-12 13:44,0,FedAvg,256,Adam,0.01,femnist,,5,1,0.6922661947661948,246,False
+2023-07-12 13:49,0,FedAvg,256,Adam,0.01,femnist,,5,1,0.6922661947661948,246,False

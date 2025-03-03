@@ -1,0 +1,18 @@
+client_1:
+  model:
+    type: gat
+    hidden: 64
+    dropout: 0.5
+    layer: 2
+client_2:
+  model:
+    type: gcn
+    hidden: 64
+    dropout: 0.5
+    layer: 2
+client_3:
+  model:
+    type: gpr
+    hidden: 64
+    dropout: 0.5
+    layer: 10

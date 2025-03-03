@@ -1,0 +1,44 @@
+use_gpu: True
+device: 0
+seed: 0
+early_stop:
+  patience: 50
+federate:
+  method: local
+  mode: standalone
+  make_global_eval: False
+  client_num: 3
+  sample_client_rate: 1.0
+  total_round_num: 300
+data:
+  root: data/
+  type: arxiv
+  splitter: 'louvain'
+  local_eval_whole_test_dataset: True
+dataloader:
+  type: pyg
+  batch_size: 1
+model:
+  type: gcn
+  dropout: 0.5
+  hidden: 64
+  out_channels: 40
+  return_proto: False
+  warpFC: True
+  feature_dim: 64
+  task: node
+train:
+  local_update_steps: 4
+  optimizer:
+    lr: 0.25
+    weight_decay: 5e-4
+    type: SGD
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: nodefullbatch_trainer
+eval:
+  freq: 1
+  metrics: [ 'acc' ]
+#  report: [ 'weighted_avg', 'avg' ]
+  best_res_update_round_wise_key: val_acc

@@ -1,0 +1,53 @@
+use_gpu: True
+device: 0
+early_stop:
+  patience: 50
+seed: 0
+federate:
+  method: fedmd
+  mode: standalone
+  client_num: 5
+  total_round_num: 200
+  sample_client_rate: 1.0
+  make_global_eval: False
+data:
+  root: data/
+  type: femnist
+  splits: [ 0.6,0.2,0.2 ]
+  transform: [ [ 'ToTensor' ], [ 'Normalize', { 'mean': [ 0.9637 ], 'std': [ 0.1592 ] } ] ]
+dataloader:
+  batch_size: 256
+model:
+  out_channels: 62
+MHFL:
+  save_pretraining_model: True
+  public_dataset: mnist
+fedmd:
+  digest_epochs: 1
+  public_subset_size: 5000
+  pre_training:
+    public_epochs: 10
+    public_batch_size: 256
+    private_epochs: 500
+    private_batch_size: 256
+    rePretrain: False
+train:
+  local_update_steps: 1
+  batch_or_epoch: epoch
+  optimizer:
+    type: Adam
+    lr: 0.001
+    weight_decay: 1e-4
+grad:
+  grad_clip: 5.0
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: cvtrainer
+eval:
+  freq: 1
+  metrics: ['acc']
+  report : ['weighted_avg', 'avg']
+  best_res_update_round_wise_key: test_acc
+
+

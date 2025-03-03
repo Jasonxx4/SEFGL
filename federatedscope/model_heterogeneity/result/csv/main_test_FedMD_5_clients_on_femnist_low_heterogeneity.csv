@@ -1,0 +1,7 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,local_eval_whole_test_dataset
+2023-07-15 11:20,0,fedmd,256,Adam,0.001,femnist,,5,1,0.011655405405405406,2,False
+2023-07-15 11:47,0,fedmd,256,Adam,0.001,femnist,,5,1,0.031119691119691116,0,False
+2023-07-15 14:51,0,fedmd,256,Adam,0.001,femnist,,5,1,0.40238202488202485,5,False
+2023-07-15 14:57,0,fedmd,256,Adam,0.001,femnist,,5,1,0.6486915486915488,1,False
+2023-07-15 20:39,0,fedmd,256,Adam,0.001,femnist,,5,1,0.6393720506220506,1,False
+2023-07-15 21:26,0,fedmd,256,Adam,0.001,femnist,,5,3,0.6990519090519091,17,False

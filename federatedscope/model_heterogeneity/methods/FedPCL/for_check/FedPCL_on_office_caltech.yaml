@@ -1,0 +1,52 @@
+# Experiment under the feature & label shift non-IID setting for Office-10
+# The number of backbone is one
+# The resulting test accuracy is about 0.418, which is similar to that reported in the original paper
+use_gpu: True
+device: 0
+early_stop:
+  patience: 50
+seed: 0
+check_completeness: False
+federate:
+  mode: standalone
+  method: fedpcl
+  client_num: 5
+  total_round_num: 100
+  sample_client_rate: 1.0
+  make_global_eval: False
+fedpcl:
+  debug: True
+data:
+  root: data/
+  type: 'office_caltech'
+  splitter_args: [{'alpha': 100.0}]
+  local_eval_whole_test_dataset: False #If it is False, it is consistent with the original paper (accuracy is about 41.8%). If it is true the accuracy is about 27%
+dataloader:
+  batch_size: 32
+train:
+  local_update_steps: 1
+  batch_or_epoch: epoch
+  optimizer:
+    type: Adam
+    lr: 0.001
+    weight_decay: 1e-4
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: fedpcl_cv_trainer
+grad:
+  grad_clip: 10.0
+model:
+  type: proj_and_deci
+  out_channels: 10
+  fedpcl:
+    model_weight_dir: ./contrib/model_weight
+    input_size: 512
+    output_dim: 256
+eval:
+  freq: 1
+  metrics: ['acc','acc_based_on_local_prototype']
+  report : ['weighted_avg', 'avg']
+  best_res_update_round_wise_key: test_acc_based_on_local_prototype
+exp_name: 'FedPCL_5_clients_on_office_caltech_for_check'
+show_label_distribution: True

@@ -1,0 +1,4 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,alpha,proto_weight,test_acc_based_on_global_proto,local_eval_whole_test_dataset,individual_best_test_acc_avg,individual_avg_test_acc_with_global_prototype,individual_avg_test_acc_with_local_prototype
+2023-08-07 01:37,0,fedproto,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.67898,127,0.5,0.5,5000,1,0.001,0.5,100,0.1,0.63268,True,0.6834999999999999,0.64596,0.0
+2023-08-07 08:07,1,fedproto,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.67808,154,0.5,0.5,5000,1,0.001,0.5,100,0.1,0.6355,True,0.68296,0.64836,0.0
+2023-08-07 14:43,2,fedproto,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.6766000000000001,196,0.5,0.5,5000,1,0.001,0.5,100,0.1,0.63606,True,0.6804,0.64964,0.0

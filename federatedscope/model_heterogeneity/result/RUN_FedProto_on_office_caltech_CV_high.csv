@@ -1,0 +1,7 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,alpha,proto_weight,test_acc_based_on_global_proto,local_eval_whole_test_dataset,individual_best_test_acc_avg,individual_avg_test_acc_with_global_prototype,individual_avg_test_acc_with_local_prototype
+2023-08-07 16:42,0,fedproto,32,Adam,0.001,office_caltech,,5,1,0.3017857142857142,19,0.5,0.5,5000,1,0.001,0.5,1.0,0.1,0.3053571428571429,True,0.3294642857142857,0.35535714285714287,0.0
+2023-08-07 17:02,1,fedproto,32,Adam,0.001,office_caltech,,5,1,0.3080357142857143,71,0.5,0.5,5000,1,0.001,0.5,1.0,0.1,0.3366071428571429,True,0.3419642857142857,0.37589285714285714,0.0
+2023-08-07 17:13,2,fedproto,32,Adam,0.001,office_caltech,,5,1,0.29107142857142854,59,0.5,0.5,5000,1,0.001,0.5,1.0,0.1,0.30892857142857144,True,0.31160714285714286,0.35625,0.0
+2023-08-07 17:30,0,fedproto,32,Adam,0.001,office_caltech,,5,1,0.17410714285714285,142,0.5,0.5,5000,1,0.001,0.5,0.1,0.1,0.1919642857142857,True,0.175,0.22678571428571428,0.0
+2023-08-07 17:37,1,fedproto,32,Adam,0.001,office_caltech,,5,1,0.16696428571428573,71,0.5,0.5,5000,1,0.001,0.5,0.1,0.1,0.19375,True,0.17857142857142855,0.21607142857142855,0.0
+2023-08-07 17:53,2,fedproto,32,Adam,0.001,office_caltech,,5,1,0.175,132,0.5,0.5,5000,1,0.001,0.5,0.1,0.1,0.19375000000000003,True,0.17946428571428572,0.22232142857142856,0.0

@@ -1,0 +1,9 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,local_eval_whole_test_dataset
+2023-07-24 11:20,0,fedpcl,32,Adam,0.001,office_caltech_fedpcl,,5,1,0.18728727012183366,72,0.5,0.5,5000,1,0.001,False
+2023-07-24 14:18,0,fedpcl,32,Adam,0.001,office_caltech_fedpcl,,5,1,0.09071690718353106,5,0.5,0.5,5000,1,0.001,False
+2023-07-24 14:25,0,fedpcl,32,Adam,0.001,office_caltech_fedpcl,,5,1,0.09071690718353106,5,0.5,0.5,5000,1,0.001,False
+2023-07-24 14:44,0,fedpcl,32,Adam,0.001,office_caltech_fedpcl,,5,1,0.09632956394268974,0,0.5,0.5,5000,1,0.001,False
+2023-07-24 14:53,0,fedpcl,32,Adam,0.001,office_caltech_fedpcl,,5,1,0.09632956394268974,0,0.5,0.5,5000,1,0.001,0.35917687629016254,False
+2023-07-24 14:57,0,fedpcl,32,Adam,0.001,office_caltech_fedpcl,,5,1,0.09632956394268974,0,0.5,0.5,5000,1,0.001,0.35917687629016254,False
+2023-07-24 14:57,0,fedpcl,32,Adam,0.001,office_caltech_fedpcl,,5,1,0.09632956394268974,0,0.5,0.5,5000,1,0.001,0.35917687629016254,False
+2023-07-24 15:08,0,fedpcl,32,Adam,0.001,office_caltech_fedpcl,,5,1,0.09071690718353106,5,0.5,0.5,5000,1,0.001,0.41863354740039593,False

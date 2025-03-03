@@ -1,0 +1,5 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,alpha,off_diag_weight,loss_dual_weight,public_dataset_name,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-07-31 16:26,0,fccl,32,Adam,0.01,office_caltech,,5,1,0.1517857142857143,38,0.5,0.5,5000,1,0.001,0.5,100,0.0051,0,cifar100,True,0.19017857142857145
+2023-07-31 17:26,0,fccl,32,Adam,0.01,office_caltech,,5,1,0.12946428571428573,12,0.5,0.5,5000,1,0.001,0.5,100,0.0051,0,fashion_minist,True,0.16875
+2023-07-31 18:16,0,fccl,32,Adam,0.01,office_caltech,,5,1,0.14464285714285713,30,0.5,0.5,5000,1,0.001,0.5,100,0.0051,0,cifar100,True,0.1910714285714286
+2023-07-31 18:39,0,fccl,32,Adam,0.01,office_caltech,,5,1,0.13571428571428573,32,0.5,0.5,5000,1,0.001,0.5,100,0.0051,0,fashion_minist,True,0.16428571428571428

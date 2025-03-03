@@ -1,0 +1,54 @@
+use_gpu: True
+device: 8
+seed: 0
+early_stop:
+  patience: 1
+federate:
+  mode: standalone
+  method: fed_sha_local
+  client_num: 5
+  sample_client_rate: 1.0
+  total_round_num: 1
+  make_global_eval: False
+graphsha:
+  imb_ratio: 80
+  gdc: 'ppr'
+  warmup: 5
+  tau: 2
+data:
+  root: data/
+  type: cora
+  splitter: 'louvain'
+dataloader:
+  type: pyg
+  batch_size: 1
+MHFL:
+  task: node  #TODO: MHFL.task and model.task should only keep one
+model:
+  type: gcn
+  dropout: 0.5
+  out_channels: 7
+  return_proto: True
+  warpFC: True #important
+  feature_dim: 64 #important
+train:
+  local_update_steps: 40
+  batch_or_epoch: epoch
+  optimizer:
+    type: SGD
+    lr: 0.05
+    weight_decay: 5e-4
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: Fed_node_sha_local_trainer
+grad:
+  grad_clip: 5.0
+eval:
+  freq: 1
+  metrics: ['acc']
+  report : ['weighted_avg', 'avg']
+  best_res_update_round_wise_key: val_acc
+vis_embedding: True
+show_client_best_individual: True
+show_label_distribution: True

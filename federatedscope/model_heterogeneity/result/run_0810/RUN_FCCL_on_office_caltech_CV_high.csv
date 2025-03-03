@@ -1,0 +1,10 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,alpha,off_diag_weight,loss_dual_weight,public_dataset_name,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-08-10 23:40,0,fccl,32,Adam,0.001,office_caltech,,5,1,0.16339285714285712,107,0.5,0.5,5000,1,0.001,0.5,100,0.0051,10,cifar100,True,0.19374999999999998
+2023-08-10 23:59,1,fccl,32,Adam,0.001,office_caltech,,5,1,0.13839285714285715,66,0.5,0.5,5000,1,0.001,0.5,100,0.0051,10,cifar100,True,0.18303571428571427
+2023-08-11 00:26,2,fccl,32,Adam,0.001,office_caltech,,5,1,0.15000000000000002,64,0.5,0.5,5000,1,0.001,0.5,100,0.0051,10,cifar100,True,0.2017857142857143
+2023-08-11 00:44,0,fccl,32,Adam,0.001,office_caltech,,5,1,0.13392857142857142,87,0.5,0.5,5000,1,0.001,0.5,1.0,0.0051,10,cifar100,True,0.16339285714285715
+2023-08-11 00:54,1,fccl,32,Adam,0.001,office_caltech,,5,1,0.12589285714285714,30,0.5,0.5,5000,1,0.001,0.5,1.0,0.0051,10,cifar100,True,0.14375
+2023-08-11 01:03,2,fccl,32,Adam,0.001,office_caltech,,5,1,0.11875,1,0.5,0.5,5000,1,0.001,0.5,1.0,0.0051,10,cifar100,True,0.13482142857142856
+2023-08-11 01:13,0,fccl,32,Adam,0.001,office_caltech,,5,1,0.1285714285714286,0,0.5,0.5,5000,1,0.001,0.5,0.1,0.0051,10,cifar100,True,0.16696428571428573
+2023-08-11 01:32,1,fccl,32,Adam,0.001,office_caltech,,5,1,0.13125000000000003,75,0.5,0.5,5000,1,0.001,0.5,0.1,0.0051,10,cifar100,True,0.15892857142857142
+2023-08-11 01:54,2,fccl,32,Adam,0.001,office_caltech,,5,1,0.13035714285714287,64,0.5,0.5,5000,1,0.001,0.5,0.1,0.0051,10,cifar100,True,0.16160714285714284

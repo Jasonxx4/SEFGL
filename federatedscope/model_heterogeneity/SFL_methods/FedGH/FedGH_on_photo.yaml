@@ -1,0 +1,46 @@
+use_gpu: True
+device: 0
+seed: 0
+early_stop:
+  patience: 50
+federate:
+  mode: standalone
+  method: fedgh
+  client_num: 3
+  sample_client_rate: 1.0
+  total_round_num: 200
+  make_global_eval: False
+data:
+  root: data/
+  type: photo
+  splitter: 'louvain'
+dataloader:
+  type: pyg
+  batch_size: 1
+MHFL:
+  task: node #TODO: MHFL.task and model.task should only keep one
+model:
+  type: gcn
+  dropout: 0.5
+  out_channels: 3
+  return_proto: True
+  warpFC: True #important
+  feature_dim: 64 #important
+  task: node
+train:
+  local_update_steps: 1
+  optimizer:
+    type: SGD
+    lr: 0.01
+    weight_decay: 5e-4
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: fedgh_node_trainer
+grad:
+  grad_clip: 5.0
+eval:
+  freq: 1
+  metrics: [ 'acc' ]
+  report: [ 'weighted_avg', 'avg' ]
+  best_res_update_round_wise_key: val_acc

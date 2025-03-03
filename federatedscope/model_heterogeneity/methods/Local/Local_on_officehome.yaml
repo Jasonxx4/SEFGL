@@ -1,0 +1,41 @@
+use_gpu: True
+device: 0
+early_stop:
+  patience: 50
+seed: 0
+federate:
+  method: local
+  mode: standalone
+  client_num: 4
+  total_round_num: 200
+  sample_client_rate: 1.0
+  make_global_eval: False
+#  merge_test_data: True
+data:
+  root: data/
+  type: officehome
+  splits: [ 0.6,0.2,0.2 ]
+  transform: [ [ 'ToTensor' ], [ 'Normalize', { 'mean': [ 0.9637 ], 'std': [ 0.1592 ] } ] ]
+dataloader:
+  batch_size: 256
+model:
+  hidden: 2048
+  out_channels: 65
+  dropout: 0.0
+train:
+  local_update_steps: 1
+  batch_or_epoch: epoch
+  optimizer:
+    lr: 0.001
+    weight_decay: 0.0
+grad:
+  grad_clip: 5.0
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: cvtrainer
+eval:
+  freq: 1
+  metrics: ['top5', 'acc', 'correct']
+  report : ['weighted_avg', 'avg', 'raw']
+  best_res_update_round_wise_key: test_acc

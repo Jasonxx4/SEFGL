@@ -1,0 +1,63 @@
+use_gpu: True
+device: 0
+early_stop:
+  patience: 50
+seed: 0
+federate:
+  method: fccl
+  mode: standalone
+  total_round_num: 200
+  sample_client_rate: 1.0
+  client_num: 5
+  make_global_eval: False
+MHFL:
+  task: CV
+  public_dataset: cifar100
+  pre_training:
+    save_model: True
+    private_epochs: 200
+    rePretrain: False
+  public_train:
+    optimizer:
+      type: Adam
+      lr: 0.0001  #0.01
+      weight_decay: 5e-4   #0.0
+data:
+  root: data/
+  local_eval_whole_test_dataset: True #important!
+  type: 'CIFAR10@torchvision'
+  splits: [1.0, 0.0, 0.0]
+  transform: [['ToTensor'], ['Normalize', {'mean': [0.4914, 0.4822, 0.4465], 'std': [0.2470, 0.2435, 0.2616]}]]
+  test_transform: [['ToTensor'], ['Normalize', {'mean': [0.4914, 0.4822, 0.4465], 'std': [0.2470, 0.2435, 0.2616]}]]
+  args: [{'download': True}]
+  splitter: 'lda'
+  splitter_args: [{'alpha': 100}]
+dataloader:
+  batch_size: 256
+model:
+  out_channels: 100
+  dropout: 0.5
+train:
+  local_update_steps: 1
+  batch_or_epoch: epoch
+  optimizer:
+    type: Adam
+    lr: 0.001
+    weight_decay: 1e-4
+grad:
+  grad_clip: 5.0
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: fccl_trainer
+eval:
+  freq: 1
+  metrics: ['acc']
+  report : ['weighted_avg', 'avg','raw']
+  best_res_update_round_wise_key: test_acc
+fccl:
+  structure: low
+  beta: 0.1
+  off_diag_weight: 0.00032  #0.0051 0.00032
+  loss_dual_weight: 1
+

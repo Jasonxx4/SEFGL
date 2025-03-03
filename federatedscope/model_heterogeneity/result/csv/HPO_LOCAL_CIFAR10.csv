@@ -1,0 +1,10 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,alpha,local_eval_whole_test_dataset
+2023-07-10 15:27,0,local,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.69002,100,True
+2023-07-10 16:16,1,local,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.6877800000000001,100,True
+2023-07-10 17:06,2,local,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.6957,100,True
+2023-07-10 19:44,0,local,256,SGD,0.01,CIFAR10@torchvision,lda,5,1,0.67026,100,True
+2023-07-10 20:36,1,local,256,SGD,0.01,CIFAR10@torchvision,lda,5,1,0.67178,100,True
+2023-07-10 21:28,2,local,256,SGD,0.01,CIFAR10@torchvision,lda,5,1,0.6808799999999999,100,True
+2023-07-10 22:18,0,local,256,SGD,0.001,CIFAR10@torchvision,lda,5,1,0.6402599999999999,100,True
+2023-07-10 23:10,1,local,256,SGD,0.001,CIFAR10@torchvision,lda,5,1,0.64232,100,True
+2023-07-11 00:01,2,local,256,SGD,0.001,CIFAR10@torchvision,lda,5,1,0.64114,100,True

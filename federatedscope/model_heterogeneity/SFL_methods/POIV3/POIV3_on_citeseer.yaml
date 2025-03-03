@@ -1,0 +1,59 @@
+use_gpu: True
+device: 0
+seed: 0
+early_stop:
+  patience: 50
+federate:
+  method: poiv3
+  mode: standalone
+  client_num: 3
+  sample_client_rate: 1.0
+  total_round_num: 200
+  make_global_eval: False
+data:
+  root: data/
+  type: citeseer
+  splitter: 'louvain'
+dataloader:
+  type: pyg
+  batch_size: 1
+MHFL:
+  task: node
+poi:
+  use_knn: False
+  LP_layer: 1
+  LP_alpha: 0.5
+model:
+  type: gcn
+  dropout: 0.5
+  hidden: 64
+  out_channels: 6
+  return_proto: True
+  warpFC: True #important
+  feature_dim: 64 #important
+  task: node
+train:
+  local_update_steps: 4
+  batch_or_epoch: epoch
+  optimizer:
+    type: SGD
+    lr: 0.25
+    weight_decay: 5e-4
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: poiv3_trainer
+grad:
+  grad_clip: 5.0
+eval:
+  freq: 1
+  metrics: ['acc','global_model_acc']
+  report : ['weighted_avg', 'avg']
+  best_res_update_round_wise_key: val_acc
+wandb:
+  use: False
+  name_user: niudaidai
+  online_track: True
+  client_train_info: True
+  name_project: 'poi_v3_manual'
+plot_acc_curve: False

@@ -1,0 +1,4 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,alpha,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-07-29 17:45,0,FedAvg,32,Adam,0.01,office_caltech,,5,1,0.3511111111111111,168,0.3,0.3,5000,1,0.001,100,True,0.40533333333333327
+2023-07-29 17:54,0,FedAvg,32,Adam,0.01,office_caltech,,5,1,0.34044444444444444,78,0.3,0.5,5000,1,0.001,100,True,0.3804444444444444
+2023-07-29 18:07,0,FedAvg,32,Adam,0.01,office_caltech,,5,1,0.3635555555555555,175,0.3,1.0,5000,1,0.001,100,True,0.4177777777777778

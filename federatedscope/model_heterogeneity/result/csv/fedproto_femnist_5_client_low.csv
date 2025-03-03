@@ -1,0 +1,13 @@
+exp_time,seed,method,batch_size,datasets,splitter,client_num,local_updates,test_acc,proto_weight,local_eval_whole_test_dataset
+2023-07-05 23:15,0,fedproto,32,femnist,,5,1,0.6944996782496782,0.1,False
+2023-07-05 23:16,1,fedproto,32,femnist,,5,1,0.692810489060489,0.1,False
+2023-07-05 23:17,2,fedproto,32,femnist,,5,1,0.7041993779493779,0.1,False
+2023-07-05 23:19,3,fedproto,32,femnist,,5,1,0.6929606392106391,0.1,False
+2023-07-05 23:20,0,fedproto,32,femnist,,5,1,0.7054606392106392,1.0,False
+2023-07-05 23:21,1,fedproto,32,femnist,,5,1,0.6996273058773058,1.0,False
+2023-07-05 23:23,2,fedproto,32,femnist,,5,1,0.6936550836550837,1.0,False
+2023-07-05 23:24,3,fedproto,32,femnist,,5,1,0.7105882668382669,1.0,False
+2023-07-05 23:25,0,fedproto,32,femnist,,5,1,0.6992106392106392,10.0,False
+2023-07-05 23:27,1,fedproto,32,femnist,,5,1,0.6879493779493779,10.0,False
+2023-07-05 23:29,2,fedproto,32,femnist,,5,1,0.6872549335049335,10.0,False
+2023-07-05 23:31,3,fedproto,32,femnist,,5,1,0.6751319176319176,10.0,False

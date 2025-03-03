@@ -1,0 +1,20 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,alpha,off_diag_weight,loss_dual_weight,public_dataset_name,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-08-08 02:34,0,fccl,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.63188,168,0.5,0.5,5000,1,0.001,0.5,100,0.0051,0,cifar100,True,0.64444
+2023-08-08 06:21,0,fccl,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.6367200000000001,46,0.5,0.5,5000,1,0.001,0.5,100,0.0051,1,cifar100,True,0.64874
+2023-08-08 10:04,0,fccl,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.6538,88,0.5,0.5,5000,1,0.001,0.5,100,0.0051,10,cifar100,True,0.6646799999999999
+2023-08-08 12:21,0,fccl,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.62938,44,0.5,0.5,5000,1,0.001,0.5,100,0.00032,0,cifar100,True,0.64154
+2023-08-08 14:59,0,fccl,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.63676,71,0.5,0.5,5000,1,0.001,0.5,100,0.00032,1,cifar100,True,0.6505000000000001
+2023-08-08 18:20,0,fccl,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.6556400000000001,170,0.5,0.5,5000,1,0.001,0.5,100,0.00032,10,cifar100,True,0.66554
+2023-08-08 20:14,0,fccl,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.66258,9,0.5,0.5,5000,1,0.001,0.5,100,0.0051,0,cifar100,True,0.66916
+2023-08-08 21:52,0,fccl,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.67024,48,0.5,0.5,5000,1,0.001,0.5,100,0.0051,1,cifar100,True,0.6770999999999999
+2023-08-08 22:50,0,fccl,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.66946,52,0.5,0.5,5000,1,0.001,0.5,100,0.0051,10,cifar100,True,0.67576
+2023-08-08 23:37,0,fccl,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.65662,2,0.5,0.5,5000,1,0.001,0.5,100,0.00032,0,cifar100,True,0.66408
+2023-08-09 00:41,0,fccl,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.66054,0,0.5,0.5,5000,1,0.001,0.5,100,0.00032,1,cifar100,True,0.6691
+2023-08-09 03:33,0,fccl,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.67048,99,0.5,0.5,5000,1,0.001,0.5,100,0.00032,10,cifar100,True,0.6788200000000001
+2023-08-09 04:16,0,fccl,256,Adam,0.0001,CIFAR10@torchvision,lda,5,1,0.6683800000000001,2,0.5,0.5,5000,1,0.001,0.5,100,0.0051,0,cifar100,True,0.67206
+2023-08-09 05:03,0,fccl,256,Adam,0.0001,CIFAR10@torchvision,lda,5,1,0.66272,1,0.5,0.5,5000,1,0.001,0.5,100,0.0051,1,cifar100,True,0.66696
+2023-08-09 06:01,0,fccl,256,Adam,0.0001,CIFAR10@torchvision,lda,5,1,0.6585799999999999,1,0.5,0.5,5000,1,0.001,0.5,100,0.0051,10,cifar100,True,0.6617200000000001
+2023-08-09 07:05,0,fccl,256,Adam,0.0001,CIFAR10@torchvision,lda,5,1,0.66602,1,0.5,0.5,5000,1,0.001,0.5,100,0.00032,0,cifar100,True,0.66876
+2023-08-09 07:59,0,fccl,256,Adam,0.0001,CIFAR10@torchvision,lda,5,1,0.6609,1,0.5,0.5,5000,1,0.001,0.5,100,0.00032,1,cifar100,True,0.6661400000000001
+2023-08-09 08:50,0,fccl,256,Adam,0.0001,CIFAR10@torchvision,lda,5,1,0.65768,2,0.5,0.5,5000,1,0.001,0.5,100,0.00032,10,cifar100,True,0.66442
+2023-08-09 11:54,0,fccl,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.54722,105,0.5,0.5,5000,1,0.001,0.5,1.0,0.0051,0,cifar100,True,0.5627800000000001

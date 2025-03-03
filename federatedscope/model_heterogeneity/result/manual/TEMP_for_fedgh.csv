@@ -1,0 +1,10 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-08-21 10:25,0,fedgh,1,Adam,0.001,cora,louvain,3,1,0.8277035176250628,106,0.5,0.5,5000,1,0.001,0.5,False,0.8386324793736964
+2023-08-21 10:26,0,fedgh,1,Adam,0.001,cora,louvain,3,1,0.8277035176250628,106,0.5,0.5,5000,1,0.001,0.5,False,0.8386324793736964
+2023-08-21 10:28,0,fedgh,1,Adam,0.01,cora,louvain,3,1,0.8201057436309552,46,0.5,0.5,5000,1,0.001,0.5,False,0.8586836038914633
+2023-08-21 10:41,0,fedgh,1,Adam,0.01,cora,louvain,3,1,0.8201057436309552,44,0.5,0.5,5000,1,0.001,0.5,False,0.8586836038914633
+2023-08-21 20:19,0,fedgh,1,SGD,0.01,cora,louvain,3,1,0.7595075960877233,199,0.5,0.5,5000,1,0.001,0.5,False,0.7595075960877233
+2023-08-21 20:21,0,fedgh,1,Adam,0.01,cora,louvain,3,1,0.8386951122879674,27,0.5,0.5,5000,1,0.001,0.5,False,0.8659881273690097
+2023-08-21 20:23,0,fedgh,1,Adam,0.01,cora,louvain,3,1,0.8386951122879674,27,0.5,0.5,5000,1,0.001,0.5,False,0.8641666337442374
+2023-08-21 20:37,0,fedgh,1,Adam,0.01,cora,louvain,3,1,0.8386951122879674,27,0.5,0.5,5000,1,0.001,0.5,False,0.8675457597677636
+2023-09-03 11:10,0,fedgh,SGD,0.01,cora,louvain,3,1,0.5,model_heterogeneity/model_settings/model_setting_GNNs_3_clients_without_additional_fc.yaml,84,0.29567794348198534,False,0.3651074925346384

@@ -1,0 +1,18 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,alpha,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-08-13 17:53,0,fedgh,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.66672,179,0.5,0.5,5000,1,0.001,0.5,100,True,0.68058
+2023-08-13 19:06,1,fedgh,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.6599799999999999,179,0.5,0.5,5000,1,0.001,0.5,100,True,0.67296
+2023-08-13 20:19,2,fedgh,256,Adam,0.01,CIFAR10@torchvision,lda,5,1,0.66732,179,0.5,0.5,5000,1,0.001,0.5,100,True,0.6766
+2023-08-14 00:07,0,fedgh,256,Adam,0.01,CIFAR10@torchvision,lda,5,5,0.70336,79,0.5,0.5,5000,1,0.001,0.5,100,True,0.7101
+2023-08-14 03:52,1,fedgh,256,Adam,0.01,CIFAR10@torchvision,lda,5,5,0.7031600000000001,99,0.5,0.5,5000,1,0.001,0.5,100,True,0.7078
+2023-08-14 07:36,2,fedgh,256,Adam,0.01,CIFAR10@torchvision,lda,5,5,0.7016,119,0.5,0.5,5000,1,0.001,0.5,100,True,0.7083200000000001
+2023-08-14 14:37,0,fedgh,256,Adam,0.01,CIFAR10@torchvision,lda,5,10,0.7028000000000001,99,0.5,0.5,5000,1,0.001,0.5,100,True,0.7099599999999999
+2023-08-14 21:38,1,fedgh,256,Adam,0.01,CIFAR10@torchvision,lda,5,10,0.70872,39,0.5,0.5,5000,1,0.001,0.5,100,True,0.7109
+2023-08-15 04:32,2,fedgh,256,Adam,0.01,CIFAR10@torchvision,lda,5,10,0.70328,79,0.5,0.5,5000,1,0.001,0.5,100,True,0.7076800000000001
+2023-08-15 05:44,0,fedgh,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.7259,59,0.5,0.5,5000,1,0.001,0.5,100,True,0.7294599999999999
+2023-08-15 06:57,1,fedgh,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.7259400000000001,179,0.5,0.5,5000,1,0.001,0.5,100,True,0.7286400000000001
+2023-08-15 08:10,2,fedgh,256,Adam,0.001,CIFAR10@torchvision,lda,5,1,0.72592,159,0.5,0.5,5000,1,0.001,0.5,100,True,0.72866
+2023-08-15 11:50,0,fedgh,256,Adam,0.001,CIFAR10@torchvision,lda,5,5,0.72026,59,0.5,0.5,5000,1,0.001,0.5,100,True,0.7244399999999999
+2023-08-15 15:39,1,fedgh,256,Adam,0.001,CIFAR10@torchvision,lda,5,5,0.71756,139,0.5,0.5,5000,1,0.001,0.5,100,True,0.7220399999999999
+2023-08-15 19:22,2,fedgh,256,Adam,0.001,CIFAR10@torchvision,lda,5,5,0.7232400000000001,159,0.5,0.5,5000,1,0.001,0.5,100,True,0.7257
+2023-08-16 02:10,0,fedgh,256,Adam,0.001,CIFAR10@torchvision,lda,5,10,0.72044,139,0.5,0.5,5000,1,0.001,0.5,100,True,0.72416
+2023-08-16 09:04,1,fedgh,256,Adam,0.001,CIFAR10@torchvision,lda,5,10,0.71792,19,0.5,0.5,5000,1,0.001,0.5,100,True,0.72178

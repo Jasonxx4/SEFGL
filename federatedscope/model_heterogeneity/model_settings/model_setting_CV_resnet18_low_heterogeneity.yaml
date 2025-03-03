@@ -1,0 +1,20 @@
+client_1:
+  model:
+    type: resnet18_fedproto
+    stride: [ 1,4 ]
+client_2:
+  model:
+    type: resnet18_fedproto
+    stride: [ 1,4 ]
+client_3:
+  model:
+    type: resnet18_fedproto
+    stride: [ 2,2 ]
+client_4:
+  model:
+    type: resnet18_fedproto
+    stride: [ 2,2 ]
+client_5:
+  model:
+    type: resnet18_fedproto
+    stride: [ 2,2 ]

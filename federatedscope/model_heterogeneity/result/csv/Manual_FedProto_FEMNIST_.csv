@@ -1,0 +1,8 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,proto_weight,local_eval_whole_test_dataset
+2023-07-25 16:30,0,fedproto,256,Adam,0.001,femnist,,5,1,0.6375466537966539,86,0.5,0.5,5000,1,0.001,1.0,False
+2023-07-25 16:32,0,fedproto,256,Adam,0.001,femnist,,5,1,0.21618833118833117,5,0.5,0.5,5000,1,0.001,1.0,False
+2023-07-25 16:33,0,fedproto,256,Adam,0.001,femnist,,5,1,0.21618833118833117,5,0.5,0.5,5000,1,0.001,1.0,False
+2023-07-25 16:41,0,fedproto,256,Adam,0.001,femnist,,5,1,0.6375466537966539,86,0.5,0.5,5000,1,0.001,1.0,False
+2023-07-25 16:44,0,fedproto,256,Adam,0.001,femnist,,5,1,0.5919996782496783,40,0.5,0.5,5000,1,0.001,1.0,False
+2023-07-27 11:00,0,fedproto,256,Adam,0.001,femnist,,5,1,0.5919996782496783,40,0.5,0.5,5000,1,0.001,1.0,False
+2023-07-27 11:14,0,fedproto,256,Adam,0.001,femnist,,5,1,0.5919996782496783,40,0.5,0.5,5000,1,0.001,1.0,False,0.634199377949378

@@ -1,0 +1,2 @@
+exp_time,seed,method,optimizer,lr,datasets,splitter,client_num,local_updates,dropout,client_cfg_file,best_round,test_acc,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-09-01 11:40,0,poiv3,Adam,0.01,cora,louvain,3,1,0.5,model_heterogeneity/model_settings/model_setting_GNNs_3_clients_without_additional_fc.yaml,25,0.8316799849937961,False,0.8409376115146919

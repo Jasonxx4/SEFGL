@@ -1,0 +1,10 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,alpha,off_diag_weight,loss_dual_weight,public_dataset_name,local_eval_whole_test_dataset,individual_best_test_acc_avg
+2023-08-11 01:47,0,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.5318607867240319,114,0.5,0.5,5000,1,0.001,0.5,100,0.0051,10,cifar100,True,0.6450445605408728
+2023-08-11 03:35,1,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.5455516287645974,95,0.5,0.5,5000,1,0.001,0.5,100,0.0051,10,cifar100,True,0.6241702519975415
+2023-08-11 04:51,2,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.5129302397049785,86,0.5,0.5,5000,1,0.001,0.5,100,0.0051,10,cifar100,True,0.62609864781807
+2023-08-11 06:04,0,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.4786877688998157,105,0.5,0.5,5000,1,0.001,0.5,1.0,0.0051,10,cifar100,True,0.5581130915795943
+2023-08-11 07:43,1,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.4952366318377382,66,0.5,0.5,5000,1,0.001,0.5,1.0,0.0051,10,cifar100,True,0.5599031960663798
+2023-08-11 09:26,2,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.4909342347879533,94,0.5,0.5,5000,1,0.001,0.5,1.0,0.0051,10,cifar100,True,0.5845881991395205
+2023-08-11 10:46,0,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.3891902274124155,114,0.5,0.5,5000,1,0.001,0.5,0.1,0.0051,10,cifar100,True,0.4574677320221266
+2023-08-11 12:47,1,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.392801167793485,136,0.5,0.5,5000,1,0.001,0.5,0.1,0.0051,10,cifar100,True,0.4569452980946528
+2023-08-11 13:35,2,fccl,256,Adam,0.01,SVHN@torchvision,lda,5,1,0.3890442532267978,50,0.5,0.5,5000,1,0.001,0.5,0.1,0.0051,10,cifar100,True,0.4367547633681622

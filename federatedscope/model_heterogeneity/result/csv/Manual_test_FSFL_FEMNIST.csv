@@ -1,0 +1,10 @@
+exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,local_eval_whole_test_dataset
+2023-07-24 20:38,0,fsfl,256,Adam,0.001,femnist,,5,1,0.22857142857142856,4,0.5,0.5,5000,1,0.001,False
+2023-07-24 21:07,0,fsfl,256,Adam,0.001,femnist,,5,1,0.7,4,0.5,0.5,5000,1,0.001,False
+2023-07-24 21:10,0,fsfl,256,Adam,0.001,femnist,,5,1,0.7,4,0.5,0.5,5000,1,0.001,False
+2023-07-24 21:24,0,fsfl,256,Adam,0.001,femnist,,5,1,0.7,4,0.5,0.5,5000,1,0.001,False
+2023-07-24 21:33,0,fsfl,256,Adam,0.001,femnist,,5,1,0.5093093093093094,4,0.5,0.5,5000,1,0.001,False
+2023-07-24 21:35,0,fsfl,256,Adam,0.001,femnist,,5,1,0.5093093093093094,4,0.5,0.5,5000,1,0.001,False
+2023-07-25 09:36,0,fsfl,256,Adam,0.001,femnist,,5,1,0.07205812955812956,19,0.5,0.5,5000,1,0.001,False
+2023-07-25 09:43,0,fsfl,256,Adam,0.001,femnist,,5,1,0.4478126340626341,19,0.5,0.5,5000,1,0.001,False
+2023-07-25 10:38,0,fsfl,256,Adam,0.001,femnist,,5,1,0.7347436722436722,4,0.5,0.5,5000,1,0.001,False

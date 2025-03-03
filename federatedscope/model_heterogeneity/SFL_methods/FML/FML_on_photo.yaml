@@ -1,0 +1,55 @@
+use_gpu: True
+device: 0
+seed: 0
+early_stop:
+  patience: 50
+federate:
+  method: fml
+  mode: standalone
+  client_num: 7
+  sample_client_rate: 1.0
+  total_round_num: 200
+  make_global_eval: False
+data:
+  root: data/
+  type: photo
+  splitter: 'louvain'
+dataloader:
+  type: pyg
+  batch_size: 1
+MHFL:
+  task: node
+model:
+  type: gcn
+  dropout: 0.5
+  hidden: 64
+  out_channels: 8
+  return_proto: False
+  warpFC: True
+  feature_dim: 64
+  task: node
+fml:
+  meme_model:
+    type: gcn
+    out_channels: 8
+    dropout: 0.5
+    hidden: 64
+    task: node
+train:
+  local_update_steps: 1
+  batch_or_epoch: epoch
+  optimizer:
+    type: SGD
+    lr: 0.01
+    weight_decay: 5e-4
+criterion:
+  type: CrossEntropyLoss
+trainer:
+  type: fml_node_trainer
+grad:
+  grad_clip: 5.0
+eval:
+  freq: 1
+  metrics: ['acc']
+  report : ['weighted_avg', 'avg']
+  best_res_update_round_wise_key: val_acc

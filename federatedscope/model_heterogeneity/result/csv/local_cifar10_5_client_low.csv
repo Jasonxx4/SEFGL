@@ -1,0 +1,5 @@
+exp_time,seed,method,batch_size,datasets,splitter,client_num,local_updates,test_acc,alpha,local_eval_whole_test_dataset
+2023-07-10 11:05,0,local,256,CIFAR10@torchvision,lda,5,1,0.6416096101986535,100,False
+2023-07-25 17:36,0,local,256,SGD,0.001,CIFAR10@torchvision,lda,5,1,0.6678,144,0.5,0.5,5000,1,0.001,100,True
+2023-07-25 18:27,1,local,256,SGD,0.001,CIFAR10@torchvision,lda,5,1,0.67462,184,0.5,0.5,5000,1,0.001,100,True
+2023-07-25 19:18,2,local,256,SGD,0.001,CIFAR10@torchvision,lda,5,1,0.6723600000000001,169,0.5,0.5,5000,1,0.001,100,True
