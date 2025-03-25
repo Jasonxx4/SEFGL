@@ -1,2 +1,0 @@
-exp_time,seed,method,optimizer,lr,datasets,splitter,client_num,local_updates,dropout,client_cfg_file,best_round,test_acc,whole_test_dataset,local_eval_whole_test_dataset,individual_best_bac_avg,individual_best_f1score_avg,individual_best_test_acc_avg
-2024-04-15 20:21,0,global,SGD,0.5,computers,louvain,1,16,0.5,,99,0.6134545454545455,True,True,0.34103759783758614,0.5102353256760863,0.6134545454545455

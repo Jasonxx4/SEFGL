@@ -1,2 +1,0 @@
-exp_time,seed,method,optimizer,lr,datasets,splitter,client_num,local_updates,dropout,client_cfg_file,best_round,test_acc,whole_test_dataset,proto_weight,local_eval_whole_test_dataset,individual_best_test_roc_auc_avg,individual_best_f1_avg,individual_best_test_acc_avg,individual_avg_test_acc_with_global_prototype,individual_avg_test_acc_with_local_prototype
-2024-03-12 19:30,0,fedproto,SGD,0.25,cora,louvain,10,4,0.5,model_heterogeneity/model_settings/10_Heterogeneous_GNNs.yaml,36,0.4711001642036125,True,0.1,True,0.0,0.2948346867817476,0.5118226600985222,0.0,0.0

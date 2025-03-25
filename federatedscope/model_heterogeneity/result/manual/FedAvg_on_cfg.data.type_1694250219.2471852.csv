@@ -1,2 +1,0 @@
-exp_time,seed,method,optimizer,lr,datasets,splitter,client_num,local_updates,dropout,client_cfg_file,best_round,test_acc,whole_test_dataset,LP_layer,LP_alpha,local_eval_whole_test_dataset,individual_best_test_acc_avg
-2023-09-09 17:04,0,poiv3_1,SGD,0.25,citeseer,louvain,3,4,0.5,model_heterogeneity/model_settings/3_Heterogeneous_GNNs.yaml,5,0.7095754290876242,True,2,0.5,True,0.7235772357723578

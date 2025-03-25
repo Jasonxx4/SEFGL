@@ -1,2 +1,0 @@
-exp_time,seed,method,optimizer,lr,datasets,splitter,client_num,local_updates,dropout,client_cfg_file,best_round,test_acc,local_eval_whole_test_dataset,individual_best_test_acc_avg
-2023-09-03 08:52,0,FedAvg,Adam,0.01,pubmed,louvain,3,1,0.5,,65,0.8538638739941788,False,0.8554664380967428

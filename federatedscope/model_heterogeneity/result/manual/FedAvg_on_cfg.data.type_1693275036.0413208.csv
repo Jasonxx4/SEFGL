@@ -1,2 +1,0 @@
-exp_time,seed,method,batch_size,optimizer,lr,datasets,splitter,client_num,local_updates,test_acc,best_round,fml_alpha,fml_beta,fedmd_public_subset_size,fedmd_digest_epochs,fedhenn_eta,dropout,client_cfg_file,whole_test_dataset,local_eval_whole_test_dataset,individual_best_test_acc_avg
-2023-08-29 10:10,0,poiv3,1,Adam,0.01,cora,louvain,3,1,0.8081430176024185,61,0.5,0.5,5000,1,0.001,0.5,model_heterogeneity/model_settings/model_setting_GNNs_3_clients_without_additional_fc.yaml,False,False,0.8650061556912924

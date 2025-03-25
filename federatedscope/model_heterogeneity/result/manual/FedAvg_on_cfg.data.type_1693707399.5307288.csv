@@ -1,2 +1,0 @@
-exp_time,seed,method,optimizer,lr,datasets,splitter,client_num,local_updates,dropout,client_cfg_file,best_round,test_acc,local_eval_whole_test_dataset,individual_best_test_acc_avg
-2023-09-03 10:17,0,local,SGD,0.25,cora,louvain,3,4,0.5,,53,0.7613574165298304,True,0.7613574165298304

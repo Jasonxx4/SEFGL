@@ -1,2 +1,0 @@
-exp_time,seed,method,optimizer,lr,datasets,splitter,client_num,local_updates,dropout,client_cfg_file,best_round,test_acc,whole_test_dataset,proto_weight,mu,lamda,imb_ratio,beta,local_eval_whole_test_dataset,individual_best_test_acc_avg
-2024-02-21 15:52,0,fgpl_worker,SGD,0.05,cora,louvain,10,5,0.5,model_heterogeneity/model_settings/10_Heterogeneous_GNNs.yaml,13,0.7916036131713113,True,0.1,0.5,0.5,80,100,True,0.8115644669885942
